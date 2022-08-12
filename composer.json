@@ -2,7 +2,7 @@
     "name": "upkareno/error-reporter",
     "description": "Simple Error Reporting package",
     "license": "MIT",
-    "type": "project",
+    "type": "library",
     "keywords": ["framework", "laravel"],
         "homepage": "https://github.com/upkareno/error-reporter",
 
@@ -20,9 +20,7 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-         "classmap": [
-            "src"
-        ],
+         
         "psr-4": {
             "Upkareno\\ErrorReporter\\": "src/"
         }
