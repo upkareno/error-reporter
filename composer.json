@@ -4,7 +4,12 @@
     "license": "MIT",
     "type": "project",
     "keywords": ["framework", "laravel"],
-
+  "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/upkareno/error-reporter"
+        }
+    ],
     "authors": [
         {
             "name": "Mohamed Mostafa",
