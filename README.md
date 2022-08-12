@@ -1,17 +1,15 @@
 # error-reporter
 
-# create commands 
 
 ## Install
 
  
-```bash composer require upkareno/error-reporter ```
+``` composer require upkareno/error-reporter ```
 
 
-## Usage
 
 ## Configuration
-## Add this provider to your config file
+##### Add this provider to your config file
 
 ```php artisan vendor:publish --provider="Upkareno\ErrorReporter\Providers\ReporterProvider" ```
 
@@ -24,7 +22,16 @@
 
 ```php artisan make:reporter ```
 
-## enter your name and email address to report bugs to email address
+##### enter your name and email address to report bugs to email address
 
 
-
+## Confing Reporter 
+##### open ``` app/Exeptions/Handler.php ```
+###### add  the following lines : 
+```   public function register() ```
+```    {  ```
+```        $this->reportable(function (Throwable $e) { ```
+```              $reporter = new \Upkareno\ErrorReporter\Reporter(); ```
+```              $reporter->report($e); ```
+```        }); ```
+```   } ```
