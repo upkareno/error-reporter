@@ -2,8 +2,9 @@
     "name": "upkareno/error-reporter",
     "description": "Simple Error Reporting package",
     "license": "MIT",
-    "type": "library",
-     
+    "type": "project",
+    "keywords": ["framework", "laravel"],
+
     "authors": [
         {
             "name": "Mohamed Mostafa",
@@ -20,5 +21,22 @@
         }
      },
 
-    "require": {}
+    "require": {
+        "php": "^7.1.8 || ^8.0",
+        "guzzlehttp/guzzle": "^7.2",
+        "laravel/framework": "^9.19",
+        "laravel/sanctum": "^3.0",
+        "laravel/tinker": "^2.7"
+    },
+     "require-dev": {
+        "fakerphp/faker": "^1.9.1",
+        "laravel/pint": "^1.0",
+        "laravel/sail": "^1.0.1",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^6.1",
+        "phpunit/phpunit": "^9.5.10",
+        "spatie/laravel-ignition": "^1.0"
+     }
+
+
 }
