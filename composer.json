@@ -12,6 +12,14 @@
             "url": "https://github.com/upkareno/error-reporter"
         }
     ],
+        "extra": {
+        "laravel": {
+            "providers": [
+                "Upkareno\\ErrorReporter\\Providers\\ReporterProvider"
+            ]
+            
+        }
+    },
     "authors": [
         {
             "name": "Mohamed Mostafa",
