@@ -1,19 +1,23 @@
 {
-    "name": "upkareno/test",
-    "description": "a imple laravel package",
+    "name": "upkareno/error-reporter",
+    "description": "Simple Error Reporting package",
     "license": "MIT",
-    "autoload": {
-        "psr-4": {
-            "Upkareno\\Test\\": "src/"
-        }
-    },
+     
     "authors": [
         {
             "name": "Mohamed Mostafa",
             "email": "mohamed1999250@gmail.com"
         }
     ],
-    "require-dev": {
-        "orchestra/testbench": "^7.6"
-    }
+    "minimum-stability": "stable",
+    "autoload": {
+         "classmap": [
+            "src"
+        ],
+        "psr-4": {
+            "Upkareno\\ErrorReporter\\": "src/"
+        }
+     },
+
+    "require": {}
 }
