@@ -4,6 +4,8 @@
     "license": "MIT",
     "type": "project",
     "keywords": ["framework", "laravel"],
+        "homepage": "https://github.com/upkareno/error-reporter",
+
   "repositories": [
         {
             "type": "vcs",
