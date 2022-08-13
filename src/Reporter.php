@@ -49,6 +49,12 @@ class Reporter
         return Error::whereDate('created_at', '>=', today()->subDays(365))->orderBy('created_at', 'desc')->get();
     }
 
+    // get error by id
+    public function getError($id)
+    {
+        return Error::find($id);
+    }
+
     // send email
     public function sendEmail($errors)
     {

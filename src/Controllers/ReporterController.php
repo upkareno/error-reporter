@@ -30,4 +30,12 @@ class ReporterController
         $data = json_decode($reporter, true);
         return $data;
     }
+
+    public function getError($id)
+    {
+        $reporter = new Reporter();
+        $reporter = $reporter->getError($id);
+        $data = json_decode($reporter, true);
+        return $data;
+    }
 }
