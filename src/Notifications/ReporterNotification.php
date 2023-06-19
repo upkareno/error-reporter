@@ -40,7 +40,7 @@ class ReporterNotification extends Notification
     {
         return (new MailMessage)
             ->line('You Have a new error report')
-            ->line($this->message)
+            ->line($this->massage)
             ->line('Thank you for using our application!');
     }
 
