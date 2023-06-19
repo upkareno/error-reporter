@@ -3,21 +3,22 @@
     "description": "Simple Error Reporting package",
     "license": "MIT",
     "type": "library",
-    "keywords": ["framework", "laravel"],
-        "homepage": "https://github.com/upkareno/error-reporter",
-
-  "repositories": [
+    "keywords": [
+        "framework",
+        "laravel"
+    ],
+    "homepage": "https://github.com/upkareno/error-reporter",
+    "repositories": [
         {
             "type": "vcs",
             "url": "https://github.com/upkareno/error-reporter"
         }
     ],
-        "extra": {
+    "extra": {
         "laravel": {
             "providers": [
                 "Upkareno\\ErrorReporter\\Providers\\ReporterProvider"
             ]
-            
         }
     },
     "authors": [
@@ -28,28 +29,24 @@
     ],
     "minimum-stability": "stable",
     "autoload": {
-         
         "psr-4": {
             "Upkareno\\ErrorReporter\\": "src/"
         }
-     },
-
+    },
     "require": {
         "php": "^7.1.8 || ^8.0",
         "guzzlehttp/guzzle": "^7.2",
-        "laravel/framework": "^9.19",
-        "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/framework": "^10.0",
+        "laravel/sanctum": "^3.2",
+        "laravel/tinker": "^2.8"
     },
-     "require-dev": {
+    "require-dev": {
         "fakerphp/faker": "^1.9.1",
         "laravel/pint": "^1.0",
-        "laravel/sail": "^1.0.1",
+        "laravel/sail": "^1.18",
         "mockery/mockery": "^1.4.4",
-        "nunomaduro/collision": "^6.1",
-        "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
-     }
-
-
+        "nunomaduro/collision": "^7.0",
+        "phpunit/phpunit": "^10.0",
+        "spatie/laravel-ignition": "^2.0"
+    }
 }
