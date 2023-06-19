@@ -8,15 +8,15 @@ use Illuminate\Notifications\Notification;
 class ReporterNotification extends Notification
 {
     use Queueable;
- 
+    public $massage;
     /**
      * Create a new notification instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($massage)
      {
-
+        $this->massage = $massage;
      }
 
     /**
@@ -40,6 +40,7 @@ class ReporterNotification extends Notification
     {
         return (new MailMessage)
             ->line('You Have a new error report')
+            ->line($this->message)
             ->line('Thank you for using our application!');
     }
 
